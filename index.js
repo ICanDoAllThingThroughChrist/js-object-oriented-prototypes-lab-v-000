@@ -4,7 +4,9 @@ function BoardMember(name, homeState, training){
   this.homeState = homeState;
   this.training = training;
 }
-
+//each JavaScript object has reference to attributes declared on its constructor's prototype
+//Both sally and freddy have a reference to the sayHello attribute that points to a specific function. 
+//Not only that, but they have reference to exactly the same function:
 BoardMember.prototype.veto = function(){
   return "No, I must disagree"
 };
